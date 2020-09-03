@@ -9,8 +9,8 @@ app.use(cors());
 
 app.use(express.json());
 
-app.get('/*', (req, res) => {
-    res.sendFile(`${__dirname}/client/build/index.html`)
+app.get('/', (req, res) => {
+    res.sendFile(`${__dirname}/client/public/index.html`)
 })
 
 
