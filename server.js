@@ -8,6 +8,7 @@ const port = process.env.PORT || 3003;
 app.use(cors());
 
 app.use(express.json());
+app.use(express.static('client/public'));
 
 const connectionString = process.env.MONGODB_URI || "mongodb://localhost/books";
 mongoose.connect(connectionString, { useNewUrlParser: true })
