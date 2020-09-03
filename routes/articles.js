@@ -5,9 +5,10 @@ const mongoose = require('mongoose');
 
 
 router.get("/", (req, res) => {
-    Article.find()
+    res.write('hello')
+    /*Article.find()
         .then(article => res.json(article))
-            .catch(err => res.status(400).res.json(`Error: ${err}`))
+            .catch(err => res.status(400).res.json(`Error: ${err}`))*/
 });
 
 
