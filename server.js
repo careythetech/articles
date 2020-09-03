@@ -15,8 +15,8 @@ mongoose.connect(connectionString, { useNewUrlParser: true })
         console.log("connected to mongo at: " + connectionString);
     });
 
-const router = require('./routes/articles')
-app.use('/api/articles/', router)
+const router = require('./routes/articles');
+app.use('/api/articles/', router);
 
 
 app.listen(port, () => console.log(`The app is running on Port: ${port}`))
